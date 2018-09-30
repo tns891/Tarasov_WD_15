@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Roboto-Reg";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto-Reg';
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.header_menu {
+  background-color: #373737;
+}
+
+.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  width: 2px;
+  height: 20px;
+  border-right: 1px dotted #fff;
+  opacity: 0.2;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.nav-item:first-child .nav-link::before {
+  border-right: none;
+}
+
+.nav a {
+  padding: 17px 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header_main {
+  padding: 15px 0;
+}
+
+.header_main_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_main_contacts_phone {
+  color: #373737;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 0px 14px;
+  border-right: 1px solid #000;
+}
+
+.header_main_contacts_phone:nth-child(2) {
+  border-right: none;
+}
+
+.header_main_contacts_button {
+  margin-left: 14px;
+}
+
+.header_main_contacts_button img {
+  margin-right: 10px;
+}
+
+/*=======
+           @media
+                   @mixin ========*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 968px;
+  }
+}
+
+.button {
+  color: #fff;
+  background-color: #ff9d00;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  vertical-align: middle;
+  padding: 13px 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.button:active, .button:focus {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

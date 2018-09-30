@@ -1,0 +1,70 @@
+
+
+body
+  margin: 0
+  font-family: 'Roboto'
+a
+  text-decoration: none!important
+// button,
+// button:focus,
+// button:active
+//   outline: none!important
+.header
+  &_menu
+    background-color: #373737
+.nav
+  justify-content: space-between
+  &-link
+    position: relative
+    &::before
+      content: ''
+      width: 2px
+      height: 20px
+      border-right: 1px dotted #fff
+      opacity: 0.2
+      color: #fff
+      position: absolute
+      left: 0
+      top: 50%
+      margin-top: -10px
+  &-item
+    &:first-child
+      .nav-link::before
+        border-right: none
+  a
+    padding: 17px 12px
+    font-size: 12px
+    font-weight: 400
+    line-height: 22px
+    text-transform: uppercase
+    color: #fff
+
+.header_main
+  padding: 15px 0
+  &_contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &_phone
+      padding: 0px 14px
+      border-right: 1px solid #cfcfd0
+      a
+        color: $text-color-dark
+        font-size: 22px
+        font-weight: 400
+        line-height: 22px
+        text-transform: uppercase
+      &:nth-child(2)
+        border-right: none
+    &_button
+      margin-left: 14px
+      img
+        margin-right: 10px
+
+
+/*=======
+           @media
+                   =========*/
+@media (min-width: 1200px)
+  .container
+    max-width: 968px
